@@ -54,31 +54,21 @@ header > div{
 }
 
 .latests-posts{
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-
-.first-sec-lp{
-  display: flex;
-  flex-direction: row;
-}
-
-.second-sec-lp{
-  display: flex;
-  flex-direction: row;
-}
-
-.first-sec-lp > div{
+.latests-posts> div:not(.explore-features){
   border: 1px inset black;
   height: 469px;
   padding: 30px 40px 0 40px;
-  width: 478px
+  width: 462px;
+  text-align: center;
 }
-
-.second-sec-lp > div{
+.explore-features{
+  width: 671px;
   border: 1px inset black;
-  height: 469px;
-  padding: 30px 40px 0 40px;
-  width: 478px
+  text-align: center;
 }
 
 .conference{
@@ -90,6 +80,7 @@ header > div{
 
 .main-link{
   border: 1px inset black;
+  text-align: center;
 }
 
 .more-links{
@@ -102,4 +93,37 @@ header > div{
   border: 1px inset black;
   height: 234px;
   width: 512px
+}
+.design-systems{
+  border: 1px inset black;
+  text-align: center;
+}
+.curated-posts{
+  display: flex;
+  justify-content: center;
+}
+.curated-posts > div{
+  border: 1px inset black;
+  text-align: center;
+  padding: 30px 40px 0 40px;
+}
+.curated-posts h2{
+  width: 61%;
+  margin: 0 auto;
+  text-align: left;
+}
+.curated-posts ul{
+  margin: 0 auto;
+  text-align: left;
+  width: fit-content;
+}
+.newsletter{
+  border: 1px inset black;
+  text-align: center;
+}
+footer{
+  height: 500px;
+  border: 1px inset black;
+  text-align: center;
+  line-height: 500px;
 }
