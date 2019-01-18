@@ -10,10 +10,10 @@ body{
 
 header{
   display: flex;
+  background-color: grey;
 }
 
 header > div{
-  background-color: #d33a2c;
   border: 1px solid white;
   color: white;
   line-height: 178px;
@@ -32,15 +32,15 @@ header > div{
 }
 
 .articles > div:nth-child(3n+1){
-  background-color: #bc3428;
+  background-color: #4b4140;
 }
 
 .articles .second-article{
-  background-color: #c7372a;
+  background-color: #555150;
 }
 
 .articles .third-article{
-  background-color: #b13125;
+  background-color: #433a39;
 }
 
 .articles div > h2{
@@ -48,12 +48,15 @@ header > div{
   padding: 15px;
   position: relative;
   text-align: left;
-  top: 50%;
+  top: 37%;
+  width: 432px;
+  margin: 0 auto;
 }
 
 .articles div > h2 a{
   color: white;
   text-decoration: none;
+  font-size: 53px;
 }
 
 .span{
@@ -61,12 +64,17 @@ header > div{
   position: absolute;
   text-align: center;
   right: 0;
-  background-color:  #d33a2c;
+  background-color: none;
+  font-family: Lato;
+  letter-spacing: -1px;
+  line-height: 47px;
 }
 .span span{
   background-color: white;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  padding: .19em .4em;
+  color: #333;
 }
 
 .latests-posts{
@@ -76,6 +84,7 @@ header > div{
 }
 .latests-posts> div:not(.explore-features){
   border: 1px inset black;
+  background-color: #89898954;
   height: 469px;
   padding: 30px 40px 0 40px;
   width: 462px;
@@ -83,20 +92,27 @@ header > div{
 }
 .explore-features{
   width: 671px;
+  background-color: #89898954;
   border: 1px inset black;
   text-align: center;
 }
 
 .conference{
   border: 1px inset black;
+  background-color: #494545;
   height: 300px;
   line-height: 300px;
   text-align: center;
+}
+.conference a{
+    color: white;
 }
 
 .main-link{
   border: 1px inset black;
   text-align: center;
+  margin: 0 40% 0 4%;
+  background-color: #dddddd;
 }
 
 .more-links{
@@ -108,38 +124,69 @@ header > div{
 .more-links > div{
   border: 1px inset black;
   height: 234px;
-  width: 512px
+  width: 512px;
+  background-color: #89898954;
 }
 .design-systems{
   border: 1px inset black;
   text-align: center;
+  background-color: darkgrey;
 }
 .curated-posts{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .curated-posts > div{
   border: 1px inset black;
   text-align: center;
   padding: 30px 40px 0 40px;
+  width: 25%;
+  background-color: dimgrey;
 }
 .curated-posts h2{
-  width: 61%;
+  width: 64%;
   margin: 0 auto;
   text-align: left;
 }
 .curated-posts ul{
-  margin: 0 auto;
+  margin: 28px 55px;
   text-align: left;
-  width: fit-content;
 }
 .newsletter{
   border: 1px inset black;
   text-align: center;
+  background-color: #dddddd;
 }
 footer{
   height: 500px;
   border: 1px inset black;
   text-align: center;
   line-height: 500px;
+  background-color: #433a39;
+  font-size: 39px;
+  color: white;
+}
+a{
+  font-size: 33px;
+  font-family: Lato;
+  font-weight: bolder;
+}
+p{
+  font-size: 20px;
+  text-align: left;
+  line-height: 35px;
+}
+li{
+  font-size: 25px;
+  letter-spacing: -1px;
+  line-height: 36px;
+}
+@media only screen and (min-width:1024px){
+  .articles > div{
+    width:33.3%;
+  }
+  .fourth-article{
+    display: none;
+  }
 }
