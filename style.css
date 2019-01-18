@@ -1,5 +1,6 @@
 *,*::after,*::before{
   box-sizing: border-box;
+  color: black;
 }
 body{
   margin: 0;
@@ -33,6 +34,12 @@ header > div{
 .articles > div:nth-child(2n){
   background-color: #c7372a;
 }
+
+.articles div > h2 a{
+  color: white;
+  text-decoration: none;
+}
+
 .span{
   left: 0;
   position: absolute;
@@ -44,4 +51,55 @@ header > div{
   background-color: white;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+}
+
+.latests-posts{
+  flex-wrap: wrap;
+}
+
+.first-sec-lp{
+  display: flex;
+  flex-direction: row;
+}
+
+.second-sec-lp{
+  display: flex;
+  flex-direction: row;
+}
+
+.first-sec-lp > div{
+  border: 1px inset black;
+  height: 469px;
+  padding: 30px 40px 0 40px;
+  width: 478px
+}
+
+.second-sec-lp > div{
+  border: 1px inset black;
+  height: 469px;
+  padding: 30px 40px 0 40px;
+  width: 478px
+}
+
+.conference{
+  border: 1px inset black;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+
+.main-link{
+  border: 1px inset black;
+}
+
+.more-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.more-links > div{
+  border: 1px inset black;
+  height: 234px;
+  width: 512px
 }
