@@ -3,6 +3,8 @@
   color: black;
 }
 body{
+  font-family: sans-serif;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -21,18 +23,32 @@ header > div{
 }
 .articles{
   display: flex;
+  flex-wrap: wrap;
 }
 .articles > div {
-  height: 900px;
-  line-height: 900px;
+  height: 745px;
   text-align: center;
-  width: 634px;
+  width: 50%;
 }
-.articles > div:nth-child(2n-1){
+
+.articles > div:nth-child(3n+1){
   background-color: #bc3428;
 }
-.articles > div:nth-child(2n){
+
+.articles .second-article{
   background-color: #c7372a;
+}
+
+.articles .third-article{
+  background-color: #b13125;
+}
+
+.articles div > h2{
+  height: 100px;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  top: 50%;
 }
 
 .articles div > h2 a{
