@@ -1,3 +1,6 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
 body{
   margin: 0;
 }
@@ -14,4 +17,31 @@ header > div{
   height: 178px;
   text-align: center;
   width: 280px;
+}
+.articles{
+  display: flex;
+}
+.articles > div {
+  height: 900px;
+  line-height: 900px;
+  text-align: center;
+  width: 634px;
+}
+.articles > div:nth-child(2n-1){
+  background-color: #bc3428;
+}
+.articles > div:nth-child(2n){
+  background-color: #c7372a;
+}
+.span{
+  left: 0;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  background-color:  #d33a2c;
+}
+.span span{
+  background-color: white;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
