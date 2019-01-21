@@ -6,6 +6,7 @@ In this project we learned some important concept about UX as an important part 
 
 * Visual weight
 * Flex box
+* Typography
 
 ## Contributors
 
